@@ -1,0 +1,78 @@
+# ============================================
+# KOOLEE Smart Fridge Tracker - .gitignore
+# ============================================
+
+# ========== SENSITIVE CREDENTIALS ==========
+# NEVER commit these files to GitHub!
+google-services.json
+service-account.json
+koolee_app/android/app/google-services.json
+
+# ========== LOCAL CONFIGURATION ==========
+koolee_app/android/local.properties
+.env
+.env.local
+*.key
+*.keystore
+*.jks
+
+# ========== IDE / EDITOR ==========
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ========== FLUTTER BUILD FILES ==========
+koolee_app/build/
+koolee_app/.dart_tool/
+koolee_app/.flutter-plugins
+koolee_app/.flutter-plugins-dependencies
+koolee_app/.packages
+koolee_app/pubspec.lock
+
+# ========== ANDROID BUILD FILES ==========
+koolee_app/android/.gradle/
+koolee_app/android/captures/
+koolee_app/android/gradlew
+koolee_app/android/gradlew.bat
+koolee_app/android/local.properties
+koolee_app/android/*.iml
+koolee_app/android/.idea/
+koolee_app/android/app/build/
+koolee_app/android/build/
+
+# ========== iOS BUILD FILES ==========
+koolee_app/ios/Flutter/flutter_export_environment.sh
+koolee_app/ios/Flutter/Flutter.framework
+koolee_app/ios/Flutter/Flutter.podspec
+koolee_app/ios/Pods/
+koolee_app/ios/.symlinks/
+koolee_app/ios/Runner.xcworkspace/xcuserdata/
+koolee_app/ios/Runner.xcodeproj/xcuserdata/
+koolee_app/ios/Runner.xcodeproj/project.xcworkspace/xcuserdata/
+
+# ========== WEB BUILD FILES ==========
+koolee_app/web/flutter_service_worker.js
+
+# ========== LOGS ==========
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ========== TEMPORARY FILES ==========
+*.tmp
+*.temp
+*.cache
+
+# ========== SUPABASE ==========
+# Keep config.toml but ignore local supabase files if any
+.supabase/
+
+# ========== ARDUINO / ESP32 ==========
+# No specific files to ignore for .ino files
+
+# ========== DATABASE ==========
+# Keep koolee_db.sql as it's schema only, not sensitive data
