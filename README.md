@@ -489,7 +489,7 @@ KOOLEE-SmartFridgeTracker/
 ├── koolee_esp32/                     # ESP32 Firmware
 │   └── koolee_esp32.ino              # Main Arduino sketch
 │   └── tes_hardware/
-│           └── tes_hardware.ino      # Hardware testing sketch 
+│       └── tes_hardware.ino      # Hardware testing sketch 
 │
 ├── supabase/                         # Supabase Backend
 │   ├── config.toml                   # Supabase config
