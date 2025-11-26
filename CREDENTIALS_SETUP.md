@@ -41,7 +41,16 @@ This project requires several credential files that are NOT included in the repo
 
 ### 2. Supabase Configuration
 
-#### Update `koolee_app/lib/config/app_config.dart`
+#### `app_config.dart`
+
+- **Location**: `koolee_app/lib/config/app_config.dart`
+- **How to setup**:
+  1. Copy `app_config.dart.example` to `app_config.dart`
+  2. Go to [Supabase Dashboard](https://supabase.com/dashboard)
+  3. Select your project
+  4. Go to Settings > API
+  5. Copy `Project URL` and `anon public` key
+  6. Update the values in `app_config.dart`:
 
 ```dart
 class AppConfig {
@@ -50,12 +59,6 @@ class AppConfig {
   // ... rest of the config
 }
 ```
-
-- **How to get**:
-  1. Go to [Supabase Dashboard](https://supabase.com/dashboard)
-  2. Select your project
-  3. Go to Settings > API
-  4. Copy `Project URL` and `anon public` key
 
 ### 3. ESP32 Configuration
 
@@ -76,7 +79,8 @@ const char* SUPABASE_KEY = "YOUR_SUPABASE_ANON_KEY";
 After adding all credentials, verify:
 
 - [ ] `google-services.json` exists in `koolee_app/android/app/`
-- [ ] `firebase_options.dart` exists in `koolee_app/lib/config/`
+- [ ] `firebase_options.dart` exists in `koolee_app/lib/config/` (copy from `.example`)
+- [ ] `app_config.dart` exists in `koolee_app/lib/config/` (copy from `.example`)
 - [ ] `service-account.json` exists in root directory
 - [ ] Supabase credentials updated in `app_config.dart`
 - [ ] WiFi and Supabase credentials updated in ESP32 sketch
@@ -92,6 +96,7 @@ The `.gitignore` file is already configured to exclude these files:
 - `google-services.json`
 - `service-account.json`
 - `firebase_options.dart`
+- `app_config.dart`
 - `local.properties`
 
 ## Regenerating Firebase Options
