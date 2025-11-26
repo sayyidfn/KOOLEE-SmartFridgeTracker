@@ -37,12 +37,24 @@ class SensorData {
     };
   }
 
-  bool get isTemperatureNormal => temperature >= -5 && temperature <= 5;
-  bool get isWeightNormal => weight >= 0 && weight <= 5000; // max 5kg
+  bool get isWeightNormal => weight >= 20 && weight <= 7000; // max 7kg
+  bool get isTemperatureNormal => temperature >= 0 && temperature <= 32;
+  bool get isHumidityNormal => humidity >= 60 && humidity <= 80;
 
   String get temperatureStatus {
-    if (temperature < -5) return 'Terlalu Dingin';
-    if (temperature > 5) return 'Terlalu Panas';
+    if (temperature < 0) return 'Terlalu Dingin';
+    if (temperature > 32) return 'Terlalu Panas';
+    return 'Normal';
+  }
+
+  String get weightStatus {
+    if (weight < 20) return 'Berat Terlalu Ringan';
+    if (weight > 7000) return 'Berat Terlalu Berat';
+    return 'Normal';
+  }
+  String get humidityStatus {
+    if (humidity < 60) return 'Kelembaban Terlalu Rendah';
+    if (humidity > 80) return 'Kelembaban Terlalu Tinggi';
     return 'Normal';
   }
 }

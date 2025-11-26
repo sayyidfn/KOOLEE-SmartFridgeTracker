@@ -23,7 +23,7 @@ const int DHT_PIN = 17;
 const int BUZZER_PIN = 5;
 
 // 4. KALIBRASI
-float calibration_factor = 15000.0; // Sesuaikan jika perlu
+float calibration_factor = 27850.0; // Sesuaikan jika perlu
 
 // ==================================================================================
 
