@@ -542,7 +542,10 @@ KOOLEE-SmartFridgeTracker/
 
 ## 👥 Team
 
-Project ini dibuat sebagai Tugas Akhir mata kuliah IoT
+Sayyid Fakhri Nurjundi (123230172) IF-C
+Saif Ali Addamawi (123230169) IF-C
+Dhani Kartika Prihantyo (123230181) IF-D
+Muhammad Aditya N. (123230146) IF-E
 
 ## 📄 License
 
