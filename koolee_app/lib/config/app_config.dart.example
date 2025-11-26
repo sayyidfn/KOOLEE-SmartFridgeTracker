@@ -1,0 +1,17 @@
+class AppConfig {
+  // Supabase Configuration
+  // Replace with your Supabase URL and Key
+  static const String supabaseUrl = 'YOUR_SUPABASE_URL_HERE';
+  static const String supabaseAnonKey = 'YOUR_SUPABASE_ANON_KEY_HERE';
+
+  // Firebase Configuration
+  // Firebase will automatically use google-services.json (Android)
+  // and GoogleService-Info.plist (iOS)
+
+  // App Settings
+  static const int dataRefreshInterval = 500; // milliseconds
+
+  // NOTE: Threshold values (min/max temperature, humidity, weight) are
+  // managed in Supabase Edge Function (push-notification/index.ts)
+  // to ensure centralized control logic and prevent client-side tampering
+}

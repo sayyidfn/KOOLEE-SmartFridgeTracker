@@ -8,6 +8,7 @@ google-services.json
 service-account.json
 koolee_app/android/app/google-services.json
 koolee_app/lib/config/firebase_options.dart
+koolee_app/lib/config/app_config.dart
 
 # ========== LOCAL CONFIGURATION ==========
 koolee_app/android/local.properties

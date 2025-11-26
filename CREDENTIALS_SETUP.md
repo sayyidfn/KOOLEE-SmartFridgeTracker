@@ -7,7 +7,8 @@ This project requires several credential files that are NOT included in the repo
 ### 1. Firebase Credentials
 
 #### `google-services.json`
-- **Location**: 
+
+- **Location**:
   - `koolee_app/android/app/google-services.json`
   - Also copy to root: `google-services.json`
 - **How to get**:
@@ -19,6 +20,7 @@ This project requires several credential files that are NOT included in the repo
   6. Place it in both locations mentioned above
 
 #### `firebase_options.dart`
+
 - **Location**: `koolee_app/lib/config/firebase_options.dart`
 - **How to generate**:
   1. Install FlutterFire CLI: `dart pub global activate flutterfire_cli`
@@ -28,6 +30,7 @@ This project requires several credential files that are NOT included in the repo
 - **Alternative**: Copy `firebase_options.dart.example` to `firebase_options.dart` and fill in your credentials
 
 #### `service-account.json`
+
 - **Location**: `service-account.json` (root directory)
 - **How to get**:
   1. Go to Firebase Console > Project Settings > Service Accounts
@@ -39,6 +42,7 @@ This project requires several credential files that are NOT included in the repo
 ### 2. Supabase Configuration
 
 #### Update `koolee_app/lib/config/app_config.dart`
+
 ```dart
 class AppConfig {
   static const String supabaseUrl = 'YOUR_SUPABASE_URL_HERE';
@@ -56,6 +60,7 @@ class AppConfig {
 ### 3. ESP32 Configuration
 
 #### Update `koolee_esp32/koolee_esp32.ino`
+
 ```cpp
 // WiFi credentials
 const char* ssid = "YOUR_WIFI_SSID";
@@ -69,6 +74,7 @@ const char* SUPABASE_KEY = "YOUR_SUPABASE_ANON_KEY";
 ### 4. Verify Setup
 
 After adding all credentials, verify:
+
 - [ ] `google-services.json` exists in `koolee_app/android/app/`
 - [ ] `firebase_options.dart` exists in `koolee_app/lib/config/`
 - [ ] `service-account.json` exists in root directory
@@ -82,6 +88,7 @@ After adding all credentials, verify:
 ⚠️ **NEVER commit these credential files to version control!**
 
 The `.gitignore` file is already configured to exclude these files:
+
 - `google-services.json`
 - `service-account.json`
 - `firebase_options.dart`
